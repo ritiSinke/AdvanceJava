@@ -1,35 +1,39 @@
-
 package awtFolder;
 
-public class pizza {
+ public class pizza {
 	
 	String customerName;
-	int pizzaSize;
-	String topping;
+	String pizzaSize;
+	int topping;
 	
+	  public pizza(String customerName, int numberOfToppings, String  size) {
+	        this.customerName = customerName;
+	        this.topping = numberOfToppings;
+	        this.pizzaSize = size;
+	    }
 		
 	
 	public void setCustomer( String Name ) {
 		customerName=Name;
 		
 	}
-	public void setSize( int  size ) {
+	public void setSize( String  size ) {
 		pizzaSize=size;
 		
 	}
 	
-	public void setTopping( String toppings) {
+	public void setTopping( int toppings) {
 		topping=toppings;
 	}
 	
 	public String getName() {
 		return customerName;
 	}
-	public int getSize() {
+	public String getSize() {
 		return pizzaSize;
 		
 	}
-	public String getTopping() {
+	public int getTopping() {
 		return topping;
 	}
 }
